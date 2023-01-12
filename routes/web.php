@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,10 @@ Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::resource('/orders', 'OrderController');
+Route::resource('/products', 'ProductController');
+Route::resource('/suppliers', 'SupplierController');
+Route::resource('/users', 'UserController');
+Route::resource('/companys', 'CompanyController');
+Route::resource('/transactions', 'TransactionController');
+Route::resource('/orderdetails', 'OrderdetailController');
