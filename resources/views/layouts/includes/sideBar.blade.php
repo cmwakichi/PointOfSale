@@ -1,16 +1,16 @@
 <nav class="active" id="sidebar">
     <ul class="list-unstyled lead">
         <li class="active">
-            <a href=""><i class="fa fa-home"></i>Home</a>
+            <a href=""><i class="fa fa-home fa-lg"></i>Home</a>
         </li>
         <li>
-            <a href="">Orders</a>
+            <a href="{{ route('orders.index') }}"><i class="fa fa-box fa-lg"></i>Orders</a>
         </li>
         <li>
-            <a href="">Transactions</a>
+            <a href="{{ route('transactions.index') }}"><i class="fa fa-money-bill fa-lg"></i>Transactions</a>
         </li>
         <li>
-            <a href="">Products</a>
+            <a href="{{ route('products.index') }}"><i class="fa fa-truck fa-lg"></i>Products</a>
         </li>
     </ul>
 </nav>
