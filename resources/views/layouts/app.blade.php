@@ -23,7 +23,7 @@
 
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="bg-blue-900 py-6">
+        <header class="bg-white py-6">
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>
                     @include('layouts.includes.navBar')
@@ -50,10 +50,6 @@
 
         @yield('content')
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Launch static backdrop modal
-        </button>
-
         <!-- Modal -->
         <div class="modal left fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
