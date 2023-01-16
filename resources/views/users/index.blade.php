@@ -6,7 +6,10 @@
             <div class="row">
                 <div class="col-md-9">
                     <div class="card">
-                        <div class="card-header"><a href="#"><i class="fa fa-plus">Add new user</i></a></div>
+                        <div class="card-header">
+                            <h4 style="float: left;">Add User</h4><a href="#" style="float: right;"
+                                class="btn btn-dark"><i class="fa fa-plus">Add new user</i></a>
+                        </div>
                         <div class="card-body">
                             <table class="table table-bordered table-left">
                                 <thead>
