@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-9 mt-3">
                 <div class="card">
-                    <h4 class="card-header">
+                    <h4 class="card-header" style="background: #008B8B; color:#fff;">
                         <marquee behaviour="">Welcome to POS Management System.</marquee>
                     </h4>
                     <div class="card-body">
