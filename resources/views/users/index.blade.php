@@ -7,8 +7,11 @@
                 <div class="col-md-9">
                     <div class="card">
                         <div class="card-header">
-                            <h4 style="float: left;">Add User</h4><a href="#" style="float: right;"
-                                class="btn btn-dark"><i class="fa fa-plus">Add new user</i></a>
+                            <h4 style="float: left;">Add User</h4>
+                            <a href="#" style="float: right;" class="btn btn-dark" data-toggle="modal"
+                                data-target="#addUser"><i class="fa fa-plus"></i>
+                                Add new user
+                            </a>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered table-left">
@@ -45,12 +48,12 @@
     </div>
 
     {{-- modal --}}
-    <div class="modal right fade" id="AddUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal right fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Add user</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Add User</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
