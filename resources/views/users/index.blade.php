@@ -7,10 +7,10 @@
                 <div class="col-md-9">
                     <div class="card">
                         <div class="card-header">
-                            <h4 style="float: left;">Add User</h4>
-                            <a href="#" style="float: right;" class="btn btn-dark" data-toggle="modal"
-                                data-target="#addUser"><i class="fa fa-plus"></i>
-                                Add new user
+                            <h4 style="float: left">Add Users</h4>
+                            <a href="{{ route('users.create') }}" style="float: right" class="btn btn-dark"><i
+                                    class="fa fa-plus"></i>
+                                Add new users
                             </a>
                         </div>
                         <div class="card-body">
@@ -47,7 +47,6 @@
         </div>
     </div>
 
-    {{-- modal --}}
     <div class="modal right fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
