@@ -31,8 +31,14 @@
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->email }}</td>
                                             <td>{{ $user->is_admin == 2 ? 'Cashier' : 'Admin' }}</td>
-                                            <td><a href="{{ route('users.edit', $user->name) }}" class="btn-group"><i
-                                                        class="fa fa-edit"></i>Edit</a></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a href="{{ route('users.edit', $user->id) }}"
+                                                        class="btn btn-info btn-sm"><i class="fa-fa-edit"></i>Edit</a>
+                                                    <a href="{{ route('users.destroy', $user->id) }}"
+                                                        class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>Delete</a>
+                                                </div>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
