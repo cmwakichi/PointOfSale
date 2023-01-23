@@ -20,14 +20,18 @@
                                         <th>#Id</th>
                                         <th>Name</th>
                                         <th>Email</th>
-                                        <th>Phone</th>
                                         <th>Role</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td></td>
-                                    </tr>
+                                    @foreach ($users as $key => $user)
+                                        <tr>
+                                            <td>{{ $key + 1 }}</td>
+                                            <td>{{ $user->name }}</td>
+                                            <td>{{ $user->email }}</td>
+                                            <td>{{ $user->is_admin == 2 ? 'Cashier' : 'Admin' }}</td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
