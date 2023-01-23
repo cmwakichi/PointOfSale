@@ -21,6 +21,7 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Role</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -30,6 +31,8 @@
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->email }}</td>
                                             <td>{{ $user->is_admin == 2 ? 'Cashier' : 'Admin' }}</td>
+                                            <td><a href="{{ route('users.edit', $user->name) }}" class="btn-group"><i
+                                                        class="fa fa-edit"></i>Edit</a></td>
                                         </tr>
                                     @endforeach
                                 </tbody>
