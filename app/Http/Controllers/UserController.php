@@ -31,4 +31,12 @@ class UserController extends Controller
     {
         return view('users.edit')->with('user', $user);
     }
+    public function update(Request $request, User $user)
+    {
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->update();
+        return redirect()->back()->with('message', 'User was updated');
+    }
 }
