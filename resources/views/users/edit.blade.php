@@ -27,14 +27,7 @@
                                 <input type="text" name="phone" value="{{ @old('phone', $user->phone) }}"
                                     class="form-control mb-3">
                             </div>
-                            <div class="form-group">
-                                <label for="">Password</label>
-                                <input type="password" name="password" class="form-control mb-3">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Confirm Password</label>
-                                <input type="password" name="confirm_pwd" class="form-control mb-3">
-                            </div>
+
                             <div class="form-group">
                                 <label for="">Role</label>
                                 <select type="text" name="is_admin" class="form-control mb-3">
