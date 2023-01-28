@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">Quantity</label>
-                                <input type="number" name="quantity" class="form-control mb-3">
+                                <input type="number" name="qty" class="form-control mb-3">
                             </div>
                             <div class="form-group">
                                 <label for="">Alert Stock</label>

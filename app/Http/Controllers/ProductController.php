@@ -35,17 +35,16 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Product $product)
     {
-        $request->validate([
-            'name' => ['required'],
-            'description' => ['required'],
-            'brand' => ['required'],
-            'price' => ['required'],
-            'quantity' => ['required'],
-            'alert_stock' => ['required']
-        ]);
-        Product::create($request->all());
+
+        $product->name = $request->input('name');
+        $product->description = $request->input('description');
+        $product->brand = $request->input('brand');
+        $product->price = $request->input('price');
+        $product->quantity = $request->input('quantity');
+        $product->alert_stock = $request->input('alert_stock');
+        $product->save();
 
         redirect('/products')->with('message', 'Product saved');
     }
