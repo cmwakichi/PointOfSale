@@ -16,7 +16,7 @@ class ProductController extends Controller
     {
         $products = Product::all();
 
-        return view('products.index', ['products' => $products]);
+        return view('products.index')->with('products', $products);
     }
 
     /**
@@ -37,7 +37,17 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => ['required'],
+            'description' => ['required'],
+            'brand' => ['required'],
+            'price' => ['required'],
+            'quantity' => ['required'],
+            'alert_stock' => ['required']
+        ]);
+        Product::create($request->all());
+
+        redirect('/products')->with('message', 'Product saved');
     }
 
     /**
