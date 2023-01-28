@@ -12,12 +12,16 @@
                         <form action="{{ route('products.store') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label for="">Name</label>
+                                <label for="">Product Name</label>
                                 <input type="text" name="name" class="form-control mb-3">
                             </div>
                             <div class="form-group">
+                                <label for="">Stock</label>
+                                <input type="number" name="stock" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
                                 <label for="">Description</label>
-                                <input type="text" name="description" class="form-control mb-3">
+                                <textarea name="desciption" id="Description" cols="30" rows="2" class="form-control"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="">Brand</label>
@@ -25,11 +29,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="">Price</label>
-                                <input type="password" name="price" class="form-control mb-3">
+                                <input type="number" name="price" class="form-control mb-3">
                             </div>
                             <div class="form-group">
                                 <label for="">Quantity</label>
-                                <input type="password" name="quantity" class="form-control mb-3">
+                                <input type="number" name="quantity" class="form-control mb-3">
                             </div>
                             <button type="submit" class="btn btn-primary ">Save Product</button>
                         </form>
