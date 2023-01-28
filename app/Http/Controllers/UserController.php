@@ -22,7 +22,7 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->phone = $request->phone;
-        $user->password = $request->password;
+        $user->password = password_hash($request->password, PASSWORD_DEFAULT);
         $user->save();
         return redirect()->back()->with('message', 'User was added');
     }
