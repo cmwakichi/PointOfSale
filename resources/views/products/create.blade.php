@@ -16,10 +16,6 @@
                                 <input type="text" name="name" class="form-control mb-3">
                             </div>
                             <div class="form-group">
-                                <label for="">Stock</label>
-                                <input type="number" name="stock" class="form-control mb-3">
-                            </div>
-                            <div class="form-group">
                                 <label for="">Description</label>
                                 <textarea name="desciption" id="Description" cols="30" rows="2" class="form-control"></textarea>
                             </div>
@@ -34,6 +30,10 @@
                             <div class="form-group">
                                 <label for="">Quantity</label>
                                 <input type="number" name="quantity" class="form-control mb-3">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Alert Stock</label>
+                                <input type="number" name="alert_stock" class="form-control mb-3">
                             </div>
                             <button type="submit" class="btn btn-primary ">Save Product</button>
                         </form>
