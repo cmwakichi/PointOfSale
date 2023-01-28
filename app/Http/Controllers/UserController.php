@@ -24,7 +24,7 @@ class UserController extends Controller
         $user->phone = $request->phone;
         $user->password = password_hash($request->password, PASSWORD_DEFAULT);
         $user->save();
-        return redirect()->back()->with('message', 'User was added');
+        return redirect('/users')->with('message', 'User was added');
     }
 
     public function edit(User $user)
@@ -37,6 +37,6 @@ class UserController extends Controller
         $user->email = $request->email;
         $user->phone = $request->phone;
         $user->update();
-        return redirect()->back()->with('message', 'User was updated');
+        return redirect('/users')->with('message', 'User was updated');
     }
 }
