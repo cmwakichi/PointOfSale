@@ -26,4 +26,17 @@ class UserController extends Controller
         $user->save();
         return redirect()->back()->with('message', 'User was added');
     }
+
+    public function edit(User $user)
+    {
+        return view('users.edit')->with('user', $user);
+    }
+    public function update(Request $request, User $user)
+    {
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->update();
+        return redirect()->back()->with('message', 'User was updated');
+    }
 }
