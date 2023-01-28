@@ -14,18 +14,15 @@
                             @method('put')
                             <div class="form-group">
                                 <label for="">Name</label>
-                                <input type="text" name="name" value="{{ @old('name', $user->name) }}"
-                                    class="form-control mb-3">
+                                <input type="text" name="name" value="{{ $user->name }}" class="form-control mb-3">
                             </div>
                             <div class="form-group">
                                 <label for="">Email</label>
-                                <input type="text" name="email" value="{{ @old('email', $user->email) }}"
-                                    class="form-control mb-3">
+                                <input type="text" name="email" value="{{ $user->email }}" class="form-control mb-3">
                             </div>
                             <div class="form-group">
                                 <label for="">Phone</label>
-                                <input type="text" name="phone" value="{{ @old('phone', $user->phone) }}"
-                                    class="form-control mb-3">
+                                <input type="text" name="phone" value="{{ $user->phone }}" class="form-control mb-3">
                             </div>
 
                             <div class="form-group">
