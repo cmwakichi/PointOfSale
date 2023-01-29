@@ -33,10 +33,15 @@
                                             <td>{{ $user->is_admin == 2 ? 'Cashier' : 'Admin' }}</td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a href="{{ route('users.edit', $user->id) }}"
+                                                    <a href="{{ route('users.edit', $user) }}"
                                                         class="btn btn-info btn-sm"><i class="fa-fa-edit"></i>Edit</a>
-                                                    <a href="{{ route('users.destroy', $user->id) }}"
-                                                        class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>Delete</a>
+                                                    <form action="{{ route('users.destroy', $user) }}" method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-danger btn-sm"
+                                                            onclick="confirm('Are you sure you want to delete the user?')"><i
+                                                                class="fa fa-trash"></i>Delete user</button>
+                                                    </form>
                                                 </div>
                                             </td>
                                         </tr>
