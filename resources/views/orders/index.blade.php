@@ -50,6 +50,11 @@
                                         <td>
                                             <input type="number" name="total[]" id="total" class="form-control">
                                         </td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-danger">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
