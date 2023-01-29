@@ -39,4 +39,10 @@ class UserController extends Controller
         $user->update();
         return redirect('/users')->with('message', 'User was updated');
     }
+    public function destroy(User $user)
+    {
+        $user->delete();
+
+        return redirect('/users')->with('message', 'User deleted');
+    }
 }

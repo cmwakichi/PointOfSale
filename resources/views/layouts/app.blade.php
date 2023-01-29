@@ -48,6 +48,12 @@
             </div>
         </header>
 
+        @if (session('message'))
+            <div x-data="{ show: true }" x-init="setTimeout(() => show = false, 1000)" x-show="show"
+                class="mb-4 px-4 py-2 mt-4 mx-2 bg-green-100 border border-green-200 text-green-700 rounded-md">
+                {{ session('message') }}</div>
+        @endif
+
         @yield('content')
         <!-- Button trigger modal -->
         <!-- Modal -->
