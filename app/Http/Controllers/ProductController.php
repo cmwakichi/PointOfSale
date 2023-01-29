@@ -35,16 +35,10 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Product $product)
+    public function store(Request $request)
     {
 
-        $product->name = $request->input('name');
-        $product->description = $request->input('description');
-        $product->brand = $request->input('brand');
-        $product->price = $request->input('price');
-        $product->quantity = $request->input('quantity');
-        $product->alert_stock = $request->input('alert_stock');
-        $product->save();
+        Product::create($request->all());
 
         redirect('/products')->with('message', 'Product saved');
     }
