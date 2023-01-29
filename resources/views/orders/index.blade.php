@@ -29,7 +29,7 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="addMoreProducts">
                                     <tr>
                                         <td>
                                             <select name="product_id" id="product_id" class="form-select">
