@@ -22,6 +22,11 @@
                                         <th>Price</th>
                                         <th>Discount</th>
                                         <th>Total</th>
+                                        <th>
+                                            <a href="#" class="btn btn-sm btn-success">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
