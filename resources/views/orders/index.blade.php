@@ -27,7 +27,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <select name="product_id" id="product_id" class="form-control">
+                                            <select name="product_id" id="product_id" class="form-select">
                                                 @foreach ($products as $product)
                                                     <option value="{{ $product->id }}">{{ $product->name }}</option>
                                                 @endforeach
