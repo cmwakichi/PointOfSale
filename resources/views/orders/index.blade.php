@@ -23,7 +23,7 @@
                                         <th>Discount</th>
                                         <th>Total</th>
                                         <th>
-                                            <a href="#" class="btn btn-sm btn-success add">
+                                            <a href="#" class="btn btn-sm btn-success addMore">
                                                 <i class="fa fa-plus"></i>
                                             </a>
                                         </th>
