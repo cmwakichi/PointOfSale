@@ -74,7 +74,9 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $product->update($request->all());
+
+        return redirect('/products')->with('message', 'Updated details');
     }
 
     /**
@@ -85,6 +87,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+
+        return redirect('/products')->with('message', 'Deleted product' . $product->name);
     }
 }
