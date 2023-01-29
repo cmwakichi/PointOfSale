@@ -40,7 +40,7 @@ class ProductController extends Controller
 
         Product::create($request->all());
 
-        redirect('/products')->with('message', 'Product saved');
+        return redirect('/products')->with('message', 'Product saved');
     }
 
     /**
