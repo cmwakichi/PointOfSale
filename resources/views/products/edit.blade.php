@@ -9,7 +9,7 @@
                         <h4>Edit Product Details Form</h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('products.update') }}" method="post">
+                        <form action="{{ route('products.update', $product) }}" method="post">
                             @csrf
                             @method('put')
                             <div class="form-group">
