@@ -15,6 +15,9 @@
 
     <script src="https://kit.fontawesome.com/de3a731341.js" crossorigin="anonymous"></script>
 
+    <!--Alpine-js-->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
