@@ -33,6 +33,18 @@
                                                 @endforeach
                                             </select>
                                         </td>
+                                        <td>
+                                            <input type="number" name="qty[]" id="qty" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="number" name="price[]" id="price" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="number" name="discount[]" id="discount" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="number" name="total[]" id="total" class="form-control">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
