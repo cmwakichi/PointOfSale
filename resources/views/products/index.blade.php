@@ -33,7 +33,7 @@
                                             <td>{{ $product->brand }}</td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a href="{{ route('products.edit', $product->id) }}"
+                                                    <a href="{{ route('products.edit', $product) }}"
                                                         class="btn btn-info btn-sm"><i class="fa-fa-edit"></i>Edit</a>
                                                     <a href="{{ route('products.destroy', $product) }}"
                                                         class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>Delete</a>
