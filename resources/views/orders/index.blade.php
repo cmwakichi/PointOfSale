@@ -51,7 +51,7 @@
                                             <input type="number" name="total[]" id="total" class="form-control">
                                         </td>
                                         <td>
-                                            <a href="#" class="btn btn-sm btn-danger">
+                                            <a href="#" class="btn btn-sm btn-danger delete">
                                                 <i class="fa fa-times"></i>
                                             </a>
                                         </td>
