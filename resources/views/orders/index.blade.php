@@ -17,11 +17,11 @@
                             <table class="table table-bordered table-left">
                                 <thead>
                                     <tr>
-                                        <th>#Id</th>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Brand</th>
-                                        <th>Actions</th>
+                                        <th>Product Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Discount</th>
+                                        <th>Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
