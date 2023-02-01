@@ -23,7 +23,7 @@
                                         <th>Discount</th>
                                         <th>Total</th>
                                         <th>
-                                            <a href="#" class="btn btn-sm btn-success addMore">
+                                            <a href="#" class="btn btn-sm btn-success add_more">
                                                 <i class="fa fa-plus"></i>
                                             </a>
                                         </th>
@@ -32,7 +32,7 @@
                                 <tbody class="addMoreProducts">
                                     <tr>
                                         <td>
-                                            <select name="product_id" id="product_id" class="form-select">
+                                            <select name="product_id[]" id="product_id" class="form-select product_id">
                                                 @foreach ($products as $product)
                                                     <option value="{{ $product->id }}">{{ $product->name }}</option>
                                                 @endforeach
@@ -74,4 +74,23 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script>
+        $('.add_more').on('click', function() {
+            var product = $('.product_id').html();
+            var numberofrow = ($('.addMoreProducts tr').length - 0) + 1;
+            var tr = '<tr><td class="">' + numberofrow + '</td>' +
+                '<td><select class="form-select product_id" name="product_id[]">' +
+                product + '</select></td>' +
+                '<td><input type="number" name="qty[]" class="form-control"><td>' +
+                '<td><input type="number" name="price[]" class="form-control"><td>' +
+                '<td><input type="number" name="discount[]" class="form-control"><td>' +
+                '<td><input type="number" name="total[]" class="form-control"><td>' +
+                '<td><a class="btn btn-sm btn-danger delete rounded-circle"><i class="fa fa-times-circle"></i></a></td>' +
+                '</tr>';
+            $('.addMoreProducts').append(tr);
+        })
+    </script>
 @endsection
